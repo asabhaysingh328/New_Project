@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_virtual_network" "vnet" {
   name                = "${var.prefix}-vnet"
-  address_space       = ["10.17.70.32/24"]
+  address_space       = ["10.17.123.32/24"]
   location           = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
